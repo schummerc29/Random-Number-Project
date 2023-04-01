@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Number Versus User Pick</title>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <h3 class="current" id="stepOne">#1: Enter your number between 1 and 100.</h3>
+            <h3 id="stepTwo">#2: Press 'Generate New Number' to get the computer's choice.</h3>
+            <h3 id="stepThree">#3: Press 'Calculate Difference' to see your comparison.</h3>
+            <button id="show">Calculate Difference</button><br>
+            <button id="restart">Reset</button>
+        </div>
+
+        <div class="number" id="user">
+            <h1>User Number:</h1>
+
+            <form>
+                <label for="choice">Pick between 1 and 100:</label>
+                <input type="number" id="choice" min="1" max="100">
+            </form>
+
+            <p id="result"></p>
+        </div>
+
+        <div class="number" id="computer">
+            <h1>Computer's Number:</h1>
+
+            <h3 id="number">Click button below for new number</h3>
+            <button type="button" id="generator">Generate New Number</button>
+        </div>
+    </div>
+
+
+    <div id="difference">
+        <h2 id="final"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
